@@ -1,0 +1,7 @@
+jobs:
+    start:
+        requires: [~pr, ~commit]
+        template: screwdriver/python3-run
+        steps:
+            - prebuild: echo 'Opening Python3.'
+
